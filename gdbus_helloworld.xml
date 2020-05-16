@@ -1,0 +1,13 @@
+<node name="/com/pgaur/dream">
+	<interface name="com.pgaur.GDBUS.">
+		<method name="HelloWorld">
+			<arg name="greeting" direction="in" type="s"/>
+			<arg name="response" direction="out" type="s"/>
+		</method>
+		<signal name="Notification">
+			<arg name="roll_number" type="i"/>
+			<arg name="name" type="s"/>
+		</signal>
+		<property name="Status" type="u" access="readwrite"/>
+	</interface>
+</node>
